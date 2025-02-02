@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        *{
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+            background-color: black;
+        }
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .card{
+            background-color: rgb(62, 60, 60);
+            margin: 5px;
+            padding: 15px;
+            border-radius: 12px;
+        }
+        .section1{
+            margin: 10px;
+            display: flex;
+            justify-content: space-around
+        }
+        #tasks{
+            color: rgb(45, 188, 188);
+            font-size: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content:space-around;
+        }
+        .deleteTask{
+            background-color: rgb(255, 0, 0);
+            color: wheat;
+        }
+        .each_task{
+            display: flex;
+            justify-content: space-between;
+            margin: 3px;
+            cursor: pointer;
+        }
+        .strikethrough{
+            text-decoration: line-through;
+        }
+        #add_task_btn{
+            border: 2px solid mediumvioletred;
+            background-color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="card">
+            <h1 style="color:#a4a2a2">Personal ToDo List</h1>
+            <div class="section1">
+                <input id="inputData" type="text" placeholder="Add Task...">
+                <button id="add_task_btn">Add Task</button>
+            </div>
+            <ol id="tasks">
+            </ol>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
